@@ -9,6 +9,9 @@ https://congsong.tistory.com/13
 2) 이클립스로 스프링부트 셋팅하기
 https://hellodoor.tistory.com/107
 
+-> 확장설치 후 안될때 이유와 조치법
+https://llnote.tistory.com/694
+
 
 2. 기본적으로 스프링부트에서는 JSP코드를 못쓰게 되어있으므로
 사용할 수 있게 셋팅한다.
