@@ -12,13 +12,19 @@
     <!-- 3.리액트 바벨 라이브러리 -->
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <!-- 아래쪽에 나의 JS : 반드시 type="text/babel" 쓸것! -->
-    <script src="./js/04.컴포넌트.js" type="text/babel"></script>
+    <!-- import할 JS가 위쪽에 위치 -->
+    <script src="./js/Avengers.js" data-plugins="transform-es2015-modules-umd" type="text/babel"></script>
+    <!-- 메인 JS가 아래쪽에 위치 -->
+    <script src="./js/04.컴포넌트.js" data-plugins="transform-es2015-modules-umd" type="text/babel"></script>
 </head>
 
 <body>
 
     <div id="root1"></div>
     <div id="root2"></div>
+    <div id="root3"></div>
+    <div id="root4"></div>
+    <div id="root5"></div>
     
 </body>
 

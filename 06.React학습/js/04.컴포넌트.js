@@ -1,3 +1,6 @@
+
+import Avengers from "./Avengers";
+
 /************************************************* 
  * [ 리액트 컴포넌트 ]
    - 컴포넌트는 HTML 요소를 반환하는 함수
@@ -36,7 +39,7 @@
 *************************************************/
 
 // 클래스로 컴포넌트 작성
-class Car extends React.Component {
+class Gogh extends React.Component {
   render() {
     return (
       <div>
@@ -49,10 +52,10 @@ class Car extends React.Component {
 
 // 랜더링
 const root1 = ReactDOM.createRoot(document.getElementById("root1"));
-root1.render(<Car />);
+root1.render(<Gogh />);
 
 // 함수로 컴포넌트 작성
-function Car2() {
+function IronMan() {
   return(
     <div>
       <h2>안녕! 나는 아이언맨이야!</h2>
@@ -63,14 +66,57 @@ function Car2() {
 
 // 랜더링
 const root2 = ReactDOM.createRoot(document.getElementById("root2"));
-root2.render(<Car2 />);
+root2.render(<IronMan />);
 
 /************************************************* 
-
+  [Props]
+  props는 속성을 나타내며 컴포넌트로 전달함
+  함수 인수와 같으며 속성으로 컴포넌트에 보냅니다.
 *************************************************/
+function Favorite(props) {
+  return <h2>내가 좋아하는 색은 {props.color}이야!</h2>;
+}
+
+const root3 = ReactDOM.createRoot(document.getElementById('root3'));
+root3.render(<Favorite color="파란색"/>);
+
+// 다른 컴포넌트내부에서 다른 컴포넌트를 사용할 수 있다!
+function Ans() {
+  return <h2>김씨가 똑하고 팔이부러졌대!</h2>;
+}
+
+function Who() {
+  return (
+    <div>
+      <h1>김똑팔이가 누구야?</h1>
+      <Ans />
+    </div>
+  );
+}
+
+const root4 = ReactDOM.createRoot(document.getElementById('root4'));
+root4.render(<Who />);
+
+
 /************************************************* 
+  [파일의 컴포넌트]
+  React는 코드를 재사용하는 것이므로 
+  컴포넌트를 별도의 파일로 분할하는 것이 좋습니다.
+
+  그렇게 하려면 파일 확장자를 가진 새 파일을 만들고 
+  그 .js 안에 코드를 넣으십시오.
+
+  파일 이름은 대문자로 시작해야 합니다.
+
+  현재파일 상단에 import한다!
 
 *************************************************/
+const root5 = ReactDOM.createRoot(document.getElementById('root5'));
+root5.render(<Avengers />);
+
+
+
+
 /************************************************* 
 
 *************************************************/
