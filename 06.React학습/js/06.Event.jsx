@@ -10,7 +10,15 @@ onClick="shoot()" -> onClick={shoot}
 ********************************************************/
 
 function Ball(props) {
-  return <img src={props.isrc} alt="공" />;
+  return <img id="bb" src={props.isrc} alt="공" onClick={()=>Move()} />;
+}
+function AlaLamp(props) {
+  return <img src={props.isrc} alt="알라딘 램프" />;
+}
+function Move(){
+    let bb = document.getElementById("bb");
+    bb.style.transform = "translateX(200%) rotate(720deg)";
+    bb.style.transition = "2s ease-in-out";
 }
 
 function Football() {
@@ -25,8 +33,16 @@ function Football() {
     ball.render(<Ball isrc={ss} />);
   };
 
+  const aladin = (lamp) => {
+    alert("소원이 무엇입니까?" + lamp);
+
+    const hope = ReactDOM.createRoot(document.getElementById("ala"));
+    hope.render(<AlaLamp isrc={lamp} />);
+  };
+
   return (
     <div>
+      <img src="./images/logoM.png" onMouseOver={()=>{aladin("./images/ala4.jpg")}} />
       <button onClick={shoot}>골을 팡~!하고 차봐!</button>
       <button onClick={() => shoot2("./images/ball.jpg")}>
         골을 팡~!하고 또차봐!
