@@ -116,8 +116,6 @@ root4.render(<Who />);
 const root5 = ReactDOM.createRoot(document.getElementById('root5'));
 root5.render(<Avengers />);
 
-
-
 /************************************************* 
   [ 바벨을 사용할때 모듈로 파일 호출시 주의사항! ]
   ____________________________________________
