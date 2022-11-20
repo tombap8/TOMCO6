@@ -10,12 +10,12 @@ onClick="shoot()" -> onClick={shoot}
 ********************************************************/
 
 function Ball(props) {
-  return <img id="bb" src={props.isrc} alt="공" onClick={()=>Move()} />;
+  return <img id="bb" src={props.isrc} alt="공" onClick={()=>move()} />;
 }
 function AlaLamp(props) {
   return <img src={props.isrc} alt="알라딘 램프" />;
 }
-function Move(){
+function move(){
     let bb = document.getElementById("bb");
     bb.style.transform = "translateX(200%) rotate(720deg)";
     bb.style.transition = "2s ease-in-out";
