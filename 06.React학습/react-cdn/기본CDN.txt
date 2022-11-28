@@ -8,7 +8,6 @@
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
 
-
 <!-- 아래쪽에 나의 JS : 반드시 type="text/babel" 쓸것! -->
 <!-- import할 모듈JS가 위쪽에 위치 -->
 <script src="모듈JS" data-plugins="transform-es2015-modules-umd" type="text/babel"></script>
