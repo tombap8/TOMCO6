@@ -1,0 +1,28 @@
+[ 03.스프링부트를 VSCODE로 개발하기 ] 
+
+1. VSCODE를 설치한다.
+
+2. 확장프로그램을 설치한다.
+1) Extension Pack for JAVA
+2)Spring Boot Extension Pack
+3) Lombok Annotations Support for VS Code
+
+3. 프로젝트 생성하기
+1) F1 -> Create Java Project...
+2) Spring Boot 선택
+3) Maven Project 선택
+4) 3.0.0 버전선택
+5) Java 언어선택
+6) 그룹아이디넣기(ex: com.rose)
+7) 전체프로젝트명(ex:garden)
+8) 팩키지 타입(Jar -> War로 안해도 됨)
+9) 자바버전(우리는 11버전)
+10) 포함 툴:
+	1. Spring Web(톰캣포함)
+	2. Spring Boot DevTools
+	3. Lombok (자바 어노테이션 도움)
+11) 프로젝트 생성 폴더 선택후 툴 다시열기!
+
+4. 최초 프로젝트를 열면 자동으로 소스를 추가해준다!
+-> 약3분후 pom.xml생성됨!
+
