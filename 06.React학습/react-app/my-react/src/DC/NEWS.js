@@ -6,7 +6,7 @@ const NEWS = () => {
     return(
         <>
             <h2>NEWS 페이지</h2>
-            <img src={isrc.news} />
+            <img src={isrc.news} alt="DC Sub page image" />
         </>
     );
 };

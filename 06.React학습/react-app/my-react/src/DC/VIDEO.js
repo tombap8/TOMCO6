@@ -6,7 +6,7 @@ const VIDEO = () => {
     return(
         <>
             <h2>VIDEO 페이지</h2>
-            <iframe src={isrc.video} />
+            <iframe title="dcifr" src={isrc.video} />
         </>
     );
 };

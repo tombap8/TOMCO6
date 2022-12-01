@@ -6,7 +6,7 @@ const CHARACTERS = () => {
     return(
         <>
             <h2>CHARACTERS 페이지</h2>
-            <img src={isrc.character} />
+            <img src={isrc.character} alt="DC Sub page image" />
         </>
     );
 };

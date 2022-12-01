@@ -6,7 +6,7 @@ const MOVIES = () => {
     return(
         <>
             <h2>MOVIES 페이지</h2>
-            <img src={isrc.movies} />
+            <img src={isrc.movies} alt="DC Sub page image" />
         </>
     );
 };

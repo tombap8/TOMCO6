@@ -6,7 +6,7 @@ const GAMES = () => {
     return(
         <>
             <h2>GAMES 페이지</h2>
-            <img src={isrc.games} />
+            <img src={isrc.games} alt="DC Sub page image" />
         </>
     );
 };
