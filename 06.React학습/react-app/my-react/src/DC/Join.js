@@ -15,6 +15,8 @@ function Join() {
     const [userNameError, setUserNameError] = useState(false);
     const [emailError, setEmailError] = useState(false);
 
+    
+
     const onChangeUserId = (e) => {
         const userIdRegex = /^[A-Za-z0-9+]{5,}$/;
         if ((!e.target.value || (userIdRegex.test(e.target.value)))) setUserIdError(false);
