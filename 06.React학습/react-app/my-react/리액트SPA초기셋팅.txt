@@ -59,3 +59,11 @@ npm install react-bootstrap bootstrap
 npm install jquery
 사용:
 import $ from 'jquery';
+
+9. 배포 명령어
+npm run build
+-> build폴더 생성됨(압축소스)
+
+10.배포 소스 실행용 가상서버 설치
+npm insatll -g serve
+npx serve -s build // 한번만 실행

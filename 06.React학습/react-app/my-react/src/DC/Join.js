@@ -30,6 +30,8 @@ function Join() {
     
 
     // [ 유효성 검사 메서드 ]
+    
+    // 1. 아이디 유효성 검사
     const onChangeUserId = (e) => { // e - 이벤트전달변수
         // 아이디 유효성 검사식(주의:따옴표싸지말것!)
         const valid = /^[A-Za-z0-9+]{5,}$/;
@@ -119,7 +121,7 @@ function Join() {
                 </div>
                 <div>
                     <label> 비밀번호를 입력하세요
-                        <input type="pwd" maxLength="20" placeholder="비밀번호" value={pwd} onChange={onChangePwd} />
+                        <input type="password" maxLength="20" placeholder="비밀번호" value={pwd} onChange={onChangePwd} />
                         {pwdError && 
                         <div className="invalid-input">
                         <small style={{color:"red"}}>
@@ -131,7 +133,7 @@ function Join() {
                 </div>
                 <div>
                     <label> 비밀번호 확인을 입력하세요
-                        <input type="pwd" maxLength="20" placeholder="비밀번호확인" value={chkPwd} onChange={onChangeChkPwd} />
+                        <input type="password" maxLength="20" placeholder="비밀번호확인" value={chkPwd} onChange={onChangeChkPwd} />
                         {chkPwdError && 
                         <div className="invalid-input">
                         <small style={{color:"red"}}>
